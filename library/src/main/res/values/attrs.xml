@@ -9,16 +9,18 @@
         <attr name="textColorSelected" format="color|reference"/>
 
         <!--stroke width and color, dash width, dash gap-->
-        <!--虚线宽度-->
         <attr name="strokeDashWidth" format="dimension|reference"/>
-        <!--虚线间隔-->
         <attr name="strokeDashGap" format="dimension|reference"/>
+
         <attr name="strokeWidthNormal" format="dimension|reference"/>
         <attr name="strokeWidthPressed" format="dimension|reference"/>
         <attr name="strokeWidthUnable" format="dimension|reference"/>
+        <attr name="strokeWidthSelected" format="dimension|reference"/>
+
         <attr name="strokeColorNormal" format="color|reference"/>
         <attr name="strokeColorPressed" format="color|reference"/>
         <attr name="strokeColorUnable" format="color|reference"/>
+        <attr name="strokeColorSelected" format="color|reference"/>
 
         <!--background color-->
         <attr name="backgroundColorNormal" format="color|reference"/>
