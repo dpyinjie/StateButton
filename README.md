@@ -30,20 +30,20 @@ Customizable attributes
 
 |        Attribute       |      default value     |           xml            |                 java                |
 |------------------------|------------------------|--------------------------|-------------------------------------|
-| normalTextColor        |   original text color  | normalTextColor          | setNormalTextColor(int color)       |
-| pressedTextColor       |   original text color  | pressedTextColor          | setPressedTextColor(int color)       |
-| unableTextColor        |   original text color  | unableTextColor          | setUnableTextColor(int color)       |
+| textColorNormal        |   original text color  | textColorNormal          | setNormalTextColor(int color)       |
+| textColorPressed       |   original text color  | textColorPressed          | setPressedTextColor(int color)       |
+| textColorUnable        |   original text color  | textColorUnable          | setUnableTextColor(int color)       |
 | strokeDashWidth        |   0  | strokeDashWidth          | setStrokeDash(int dashWidth, int dashGap)       |
 | strokeDashGap        |   0  | strokeDashGap          | setStrokeDash(int dashWidth, int dashGap)      |
-| normalStrokeWidth        |   0  | normalStrokeWidth          | setNormalStrokeWidth(int widht)       |
-| pressedStrokeWidth        |   0  | pressedStrokeWidth          | setPressedStrokeWidth(int widht)        |
-| unableStrokeWidth        |   0  | unableStrokeWidth          | setUnableStrokeWidth(int widht)        |
-| normalStrokeColor        |   0  | normalStrokeColor          | setNormalStrokeColor(int color)       |
-| pressedStrokeColor        |   0  | pressedStrokeColor          | setPressedStrokeColor(int color)       |
-| unableStrokeColor        |   0  | unableStrokeColor          | setUnableStrokeColor(int color)       |
-| normalBackgroundColor        |   0  | normalBackgroundColor          | setNormalBackgroundColor(int color)       |
-| pressedBackgroundColor        |   0  | pressedBackgroundColor   | setPressedBackgroundColor(int color)       |
-| unableBackgroundColor        |   0  | unableBackgroundColor          | setUnableBackgroundColor(int color)       |
+| strokeWidthNormal        |   0  | strokeWidthNormal          | setNormalStrokeWidth(int widht)       |
+| strokeWidthPressed        |   0  | strokeWidthPressed          | setPressedStrokeWidth(int widht)        |
+| strokeWidthUnable        |   0  | strokeWidthUnable          | setUnableStrokeWidth(int widht)        |
+| strokeColorNormal        |   0  | strokeColorNormal          | setNormalStrokeColor(int color)       |
+| strokeColorPressed        |   0  | strokeColorPressed          | setPressedStrokeColor(int color)       |
+| strokeColorUnable        |   0  | strokeColorUnable          | setUnableStrokeColor(int color)       |
+| backgroundColorNormal        |   0  | backgroundColorNormal          | setNormalBackgroundColor(int color)       |
+| backgroundColorPressed        |   0  | backgroundColorPressed   | setPressedBackgroundColor(int color)       |
+| backgroundColorUnable        |   0  | backgroundColorUnable          | setUnableBackgroundColor(int color)       |
 | radius        |   0  | radius          | setRadius(int radius) / setRadius(float[] radii)      |
 | round        |  false  | round          | setRound(boolean round)       |
 | animationDuration        |   0ms  | animationDuration          | setAnimationDuration(int duration)       |
@@ -69,21 +69,21 @@ If the default values of custom attribues did not meet your requirement, you can
             
             app:strokeDashGap="2dp"
             app:strokeDashWidth="5dp"
-            app:normalStrokeWidth="2dp"
-            app:pressedStrokeWidth="2dp"
-            app:unableStrokeWidth="2dp"
+            app:strokeWidthNormal="2dp"
+            app:strokeWidthPressed="2dp"
+            app:strokeWidthUnable="2dp"
             
-            app:normalStrokeColor="@android:color/white"
-            app:pressedStrokeColor="@android:color/white"
-            app:unableStrokeColor="@android:color/white"
+            app:strokeColorNormal="@android:color/white"
+            app:strokeColorPressed="@android:color/white"
+            app:strokeColorUnable="@android:color/white"
             
-            app:normalTextColor="@android:color/white"
-            app:pressedTextColor="@android:color/white"
-            app:unableTextColor="@android:color/white"
+            app:textColorNormal="@android:color/white"
+            app:textColorPressed="@android:color/white"
+            app:textColorUnable="@android:color/white"
             
-            app:normalBackgroundColor="@color/colorPrimaryDark"
-            app:pressedBackgroundColor="@color/colorPrimaryDark"
-            app:unableBackgroundColor="@color/colorPrimaryDark"/>
+            app:backgroundColorNormal="@color/colorPrimaryDark"
+            app:backgroundColorPressed="@color/colorPrimaryDark"
+            app:backgroundColorUnable="@color/colorPrimaryDark"/>
 ```
 
 

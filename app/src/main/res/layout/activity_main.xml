@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -20,12 +19,12 @@
             android:layout_margin="10dp"
             android:padding="10dp"
             android:text="change text color"
-            app:normalBackgroundColor="@color/colorPrimary"
-            app:normalTextColor="@android:color/white"
-            app:pressedBackgroundColor="@color/colorPrimary"
-            app:pressedTextColor="@android:color/holo_red_light"
-            app:unableBackgroundColor="@color/colorPrimary"
-            app:unableTextColor="@android:color/holo_orange_dark"/>
+            app:backgroundColorNormal="@color/colorPrimary"
+            app:backgroundColorPressed="@color/colorPrimary"
+            app:backgroundColorUnable="@color/colorPrimary"
+            app:textColorNormal="@android:color/white"
+            app:textColorPressed="@android:color/holo_red_light"
+            app:textColorUnable="@android:color/holo_orange_dark"/>
 
 
         <deadline.statebutton.StateButton
@@ -37,9 +36,9 @@
             android:padding="10dp"
             android:text="change background"
             android:textColor="@android:color/white"
-            app:normalBackgroundColor="@color/colorPrimary"
-            app:pressedBackgroundColor="@color/colorPrimaryDark"
-            app:unableBackgroundColor="@android:color/holo_red_light"/>
+            app:backgroundColorNormal="@color/colorPrimary"
+            app:backgroundColorPressed="@color/colorPrimaryDark"
+            app:backgroundColorUnable="@android:color/holo_red_light"/>
 
 
         <deadline.statebutton.StateButton
@@ -51,10 +50,10 @@
             android:padding="10dp"
             android:text="with cornersRadius"
             android:textColor="@android:color/white"
-            app:cornersRadius="10dp"
-            app:normalBackgroundColor="@color/colorPrimary"
-            app:pressedBackgroundColor="@color/colorPrimaryDark"
-            app:unableBackgroundColor="@android:color/holo_red_light"/>
+            app:backgroundColorNormal="@color/colorPrimary"
+            app:backgroundColorPressed="@color/colorPrimaryDark"
+            app:backgroundColorUnable="@android:color/holo_red_light"
+            app:cornersRadius="10dp"/>
 
         <deadline.statebutton.StateButton
             android:id="@+id/round_test"
@@ -65,11 +64,10 @@
             android:padding="10dp"
             android:text="round cornersRadius"
             android:textColor="@android:color/white"
-            app:normalBackgroundColor="@color/colorPrimary"
-            app:pressedBackgroundColor="@color/colorPrimaryDark"
-
-            app:round="true"
-            app:unableBackgroundColor="@android:color/holo_red_light"/>
+            app:backgroundColorNormal="@color/colorPrimary"
+            app:backgroundColorPressed="@color/colorPrimaryDark"
+            app:backgroundColorUnable="@android:color/holo_red_light"
+            app:round="true"/>
 
         <deadline.statebutton.StateButton
             android:id="@+id/different_radius_test"
@@ -80,9 +78,26 @@
             android:padding="10dp"
             android:text="different_radius"
             android:textColor="@android:color/white"
-            app:normalBackgroundColor="@color/colorPrimary"
-            app:pressedBackgroundColor="@color/colorPrimaryDark"
-            app:unableBackgroundColor="@android:color/holo_red_light"/>
+            app:backgroundColorNormal="@color/colorPrimary"
+            app:backgroundColorPressed="@color/colorPrimaryDark"
+            app:backgroundColorUnable="@android:color/holo_red_light"/>
+
+        <deadline.statebutton.StateButton
+            android:id="@+id/test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="测试.."
+            android:textColor="@android:color/white"
+            app:backgroundColorNormal="@color/colorPrimary"
+            app:backgroundColorPressed="@color/colorPrimaryDark"
+            app:backgroundColorSelected="@color/colorPrimary"
+            app:backgroundColorUnable="@android:color/holo_red_light"
+            app:cornersRadiusBottomLeft="10dp"
+            app:cornersRadiusBottomRight="20dp"
+            app:textColorSelected="#16e61d"/>
 
         <deadline.statebutton.StateButton
             android:layout_width="wrap_content"
@@ -90,13 +105,8 @@
             android:layout_gravity="center_horizontal"
             android:layout_margin="10dp"
             android:padding="10dp"
-            android:text="different_radius"
-            android:textColor="@android:color/white"
-            app:cornersBottomLeftRadius="10dp"
-            app:cornersBottomRightRadius="20dp"
-            app:normalBackgroundColor="@color/colorPrimary"
-            app:pressedBackgroundColor="@color/colorPrimaryDark"
-            app:unableBackgroundColor="@android:color/holo_red_light"/>
+            android:text="测试.."
+            android:textColor="@android:color/white"/>
 
         <deadline.statebutton.StateButton
             android:id="@+id/dash_test"
@@ -107,17 +117,17 @@
             android:padding="10dp"
             android:text="with dash"
             app:cornersRadius="5dp"
-            app:normalStrokeColor="@android:color/white"
-            app:normalStrokeWidth="2dp"
-            app:normalTextColor="@android:color/white"
-            app:pressedStrokeColor="@android:color/holo_red_light"
-            app:pressedStrokeWidth="2dp"
-            app:pressedTextColor="@android:color/holo_red_light"
+            app:strokeColorNormal="@android:color/white"
+            app:strokeColorPressed="@android:color/holo_red_light"
+            app:strokeColorUnable="@android:color/holo_orange_dark"
             app:strokeDashGap="5dp"
             app:strokeDashWidth="5dp"
-            app:unableStrokeColor="@android:color/holo_orange_dark"
-            app:unableStrokeWidth="2dp"
-            app:unableTextColor="@android:color/holo_orange_dark"/>
+            app:strokeWidthNormal="2dp"
+            app:strokeWidthPressed="2dp"
+            app:strokeWidthUnable="2dp"
+            app:textColorNormal="@android:color/white"
+            app:textColorPressed="@android:color/holo_red_light"
+            app:textColorUnable="@android:color/holo_orange_dark"/>
 
         <deadline.statebutton.StateButton
             android:id="@+id/stroke_test"
@@ -128,15 +138,15 @@
             android:padding="10dp"
             android:text="with stroke"
             app:cornersRadius="5dp"
-            app:normalStrokeColor="@android:color/white"
-            app:normalStrokeWidth="2dp"
-            app:normalTextColor="@android:color/white"
-            app:pressedStrokeColor="@android:color/holo_red_light"
-            app:pressedStrokeWidth="2dp"
-            app:pressedTextColor="@android:color/holo_red_light"
-            app:unableStrokeColor="@android:color/holo_orange_dark"
-            app:unableStrokeWidth="2dp"
-            app:unableTextColor="@android:color/holo_orange_dark"/>
+            app:strokeColorNormal="@android:color/white"
+            app:strokeColorPressed="@android:color/holo_red_light"
+            app:strokeColorUnable="@android:color/holo_orange_dark"
+            app:strokeWidthNormal="2dp"
+            app:strokeWidthPressed="2dp"
+            app:strokeWidthUnable="2dp"
+            app:textColorNormal="@android:color/white"
+            app:textColorPressed="@android:color/holo_red_light"
+            app:textColorUnable="@android:color/holo_orange_dark"/>
 
         <deadline.statebutton.StateButton
             android:id="@+id/stroke_background_test"
@@ -146,14 +156,14 @@
             android:layout_margin="10dp"
             android:padding="10dp"
             android:text="keep stroke"
+            app:backgroundColorPressed="@color/colorPrimaryDark"
             app:cornersRadius="5dp"
-            app:normalStrokeColor="@android:color/white"
-            app:normalStrokeWidth="2dp"
-            app:normalTextColor="@android:color/white"
-            app:pressedBackgroundColor="@color/colorPrimaryDark"
-            app:pressedStrokeColor="@android:color/white"
-            app:pressedStrokeWidth="2dp"
-            app:pressedTextColor="@android:color/white"/>
+            app:strokeColorNormal="@android:color/white"
+            app:strokeColorPressed="@android:color/white"
+            app:strokeWidthNormal="2dp"
+            app:strokeWidthPressed="2dp"
+            app:textColorNormal="@android:color/white"
+            app:textColorPressed="@android:color/white"/>
 
         <deadline.statebutton.StateButton
             android:id="@+id/stroke_background_test2"
@@ -163,12 +173,12 @@
             android:layout_margin="10dp"
             android:padding="10dp"
             android:text="stroke_background"
+            app:backgroundColorPressed="@color/colorPrimaryDark"
             app:cornersRadius="5dp"
-            app:normalStrokeColor="@android:color/white"
-            app:normalStrokeWidth="2dp"
-            app:normalTextColor="@android:color/white"
-            app:pressedBackgroundColor="@color/colorPrimaryDark"
-            app:pressedTextColor="@android:color/white"/>
+            app:strokeColorNormal="@android:color/white"
+            app:strokeWidthNormal="2dp"
+            app:textColorNormal="@android:color/white"
+            app:textColorPressed="@android:color/white"/>
 
         <deadline.statebutton.StateButton
             android:id="@+id/stroke_background_animation_test"
@@ -179,11 +189,11 @@
             android:padding="10dp"
             android:text="stroke_background_animation"
             app:animationDuration="200"
+            app:backgroundColorPressed="@color/colorPrimaryDark"
             app:cornersRadius="5dp"
-            app:normalStrokeColor="@android:color/white"
-            app:normalStrokeWidth="2dp"
-            app:normalTextColor="@android:color/white"
-            app:pressedBackgroundColor="@color/colorPrimaryDark"
-            app:pressedTextColor="@android:color/white"/>
+            app:strokeColorNormal="@android:color/white"
+            app:strokeWidthNormal="2dp"
+            app:textColorNormal="@android:color/white"
+            app:textColorPressed="@android:color/white"/>
     </LinearLayout>
 </ScrollView>

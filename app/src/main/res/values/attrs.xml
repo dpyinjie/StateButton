@@ -3,34 +3,36 @@
     <declare-styleable name="StateButton">
 
         <!--text color-->
-        <attr name="normalTextColor" format="color|reference"/>
-        <attr name="pressedTextColor" format="color|reference"/>
-        <attr name="unableTextColor" format="color|reference"/>
+        <attr name="textColorNormal" format="color|reference"/>
+        <attr name="textColorPressed" format="color|reference"/>
+        <attr name="textColorUnable" format="color|reference"/>
+        <attr name="textColorSelected" format="color|reference"/>
 
         <!--stroke width and color, dash width, dash gap-->
         <!--虚线宽度-->
         <attr name="strokeDashWidth" format="dimension|reference"/>
         <!--虚线间隔-->
         <attr name="strokeDashGap" format="dimension|reference"/>
-        <attr name="normalStrokeWidth" format="dimension|reference"/>
-        <attr name="pressedStrokeWidth" format="dimension|reference"/>
-        <attr name="unableStrokeWidth" format="dimension|reference"/>
-        <attr name="normalStrokeColor" format="color|reference"/>
-        <attr name="pressedStrokeColor" format="color|reference"/>
-        <attr name="unableStrokeColor" format="color|reference"/>
+        <attr name="strokeWidthNormal" format="dimension|reference"/>
+        <attr name="strokeWidthPressed" format="dimension|reference"/>
+        <attr name="strokeWidthUnable" format="dimension|reference"/>
+        <attr name="strokeColorNormal" format="color|reference"/>
+        <attr name="strokeColorPressed" format="color|reference"/>
+        <attr name="strokeColorUnable" format="color|reference"/>
 
         <!--background color-->
-        <attr name="normalBackgroundColor" format="color|reference"/>
-        <attr name="pressedBackgroundColor" format="color|reference"/>
-        <attr name="unableBackgroundColor" format="color|reference"/>
+        <attr name="backgroundColorNormal" format="color|reference"/>
+        <attr name="backgroundColorPressed" format="color|reference"/>
+        <attr name="backgroundColorUnable" format="color|reference"/>
+        <attr name="backgroundColorSelected" format="color|reference"/>
 
         <!--background cornersRadius-->
         <attr name="round" format="boolean|reference"/>
         <attr name="cornersRadius" format="dimension|reference"/>
-        <attr name="cornersTopLeftRadius" format="reference|dimension"/>
-        <attr name="cornersTopRightRadius" format="reference|dimension"/>
-        <attr name="cornersBottomLeftRadius" format="reference|dimension"/>
-        <attr name="cornersBottomRightRadius" format="reference|dimension"/>
+        <attr name="cornersRadiusTopLeft" format="reference|dimension"/>
+        <attr name="cornersRadiusTopRight" format="reference|dimension"/>
+        <attr name="cornersRadiusBottomLeft" format="reference|dimension"/>
+        <attr name="cornersRadiusBottomRight" format="reference|dimension"/>
 
 
         <!--animation duration-->
