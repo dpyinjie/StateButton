@@ -21,13 +21,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         //设置不同状态下文字变色
         text = (StateButton) findViewById(R.id.text_test);
         text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                text.setEnabled(false);
+                text.setEnabled(!text.isEnabled());
             }
         });
 
@@ -36,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         background.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                background.setEnabled(false);
+                background.setEnabled(!background.isEnabled());
             }
         });
 
@@ -50,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         stroke.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                stroke.setEnabled(false);
+                stroke.setEnabled(!stroke.isEnabled());
             }
         });
 
@@ -59,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         dash.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                dash.setEnabled(false);
+                dash.setEnabled(!dash.isEnabled());
             }
         });
     }
